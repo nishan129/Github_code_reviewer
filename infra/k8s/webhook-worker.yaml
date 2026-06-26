@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webhook-worker
-          image: 081897152525.dkr.ecr.us-east-1.amazonaws.com/webhook:latest
+          image: 081897152525.dkr.ecr.eu-north-1.amazonaws.com/webhook:latest
           command: ["celery", "-A", "worker", "worker", "--loglevel=info", "-Q", "webhook"]
           envFrom:
             - configMapRef:

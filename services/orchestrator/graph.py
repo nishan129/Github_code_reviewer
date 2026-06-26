@@ -7,7 +7,7 @@ from langfuse.openai import OpenAI
 from langgraph.graph import StateGraph, END
 from langgraph.types import Send
 
-# client = OpenAI()
+client = OpenAI()
 
 PROMPTS = {
     "static_analysis": (
