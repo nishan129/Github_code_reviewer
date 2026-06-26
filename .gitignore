@@ -179,3 +179,21 @@ infra/terraform/.terraform
 .terraform
 .terraform/
 \infra\terraform\.terraform
+
+
+# In your repo root or infra/terraform/ folder
+cat >> infra/terraform/.gitignore << 'EOF'
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!example.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+crash.log
+crash.*.log
+EOF
