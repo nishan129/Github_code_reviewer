@@ -176,3 +176,6 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python
 infra/terraform/.terraform
 .infra/terraform/.terraform
+.terraform
+.terraform/
+\infra\terraform\.terraform
